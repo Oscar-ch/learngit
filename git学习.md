@@ -56,6 +56,7 @@
 
    ```git
    git clone git@github.com:Oscar-ch/learnJava
+   ```
 
 ## 分支管理
 
@@ -75,3 +76,7 @@
 5. 如何在保留分支情况下合并？
 
    Key:git merge --no-ff -m"merge without ff" dev
+
+6. 如何对远程库版本回退？
+
+   Key:git push -f origin master
