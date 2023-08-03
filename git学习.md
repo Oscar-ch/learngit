@@ -72,4 +72,6 @@
 
    Key:git merge dev,git branch -d dev
 
-5. s
+5. 如何在保留分支情况下合并？
+
+   Key:git merge --no-ff -m"merge without ff" dev
