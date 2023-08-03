@@ -80,3 +80,28 @@
 6. 如何对远程库版本回退？
 
    Key:git push -f origin master
+
+## BUG分支
+
+1. 当前dev分支暂时无法提交，但是需要立即在master分支上修复bug，应该怎么办？
+
+   Key:
+
+   ```git
+
+   git stash
+   git switch master
+   git switch -c issue-101
+   ........
+   git switch master
+   git merge --no-ff -m "merged bug fix 101" issue-101
+   git stash list
+
+   git stash aplly(删除stash中的内容需要 git stash drop)
+   或者
+   git stash pop(自动删除)
+
+   ```
+
+
+
